@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,53 @@
 
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
+    <style>
+        li ol{
+            height: 0;
+            overflow: hidden;
+            transition: height .5s;
+        }
+
+        li:hover{
+            background: #ccc;
+        }
+
+        li:hover ol{
+            height: 30px;
+        }
+        table{
+            
+            margin: auto;
+        }
+        caption{
+            border: 1px solid black;
+            padding: 6px;
+            background-color: rgb(178, 151, 151);
+            border-top: 3px solid transparent;
+            font-size: 22px;
+           border-bottom: 2px solid rgb(37, 31, 31);
+            
+        }
+        td{
+            border: 1px solid black;
+            padding: 6px;
+            background-color: rgb(217, 208, 208);
+            border-top: 3px solid transparent;
+            font-size: 18px;
+    
+        }
+        th{
+            border: 1px solid black;
+            padding: 6px;
+            text-align: 15px;
+            background-color: rgb(205, 181, 181);
+            border-top: 3px solid transparent;
+            font-size: 20px;
+            
+        }
+    </style>
     <div id="principal">
         <header class="hero">
             <nav>
@@ -40,17 +87,122 @@
             </section>
             <section class="content-section">
                 <article>
-                    <header class="header"><h2>Aldeia da Folha</h2></header>
+                    <header class="header">
+                        <h2>Aldeia da Folha</h2>
+                    </header>
                     <p>Paragrafo 1</p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora ratione veniam inventore et
+                    nostrum omnis adipisci fugit blanditiis atque hic animi, expedita iusto, excepturi deleniti autem
+                    voluptas. Qui, eaque accusamus!
                     <p>Paragrafo 2</p>
+                    <ol>
+                        <li>Mandamentos</li>
+                        <li>Ajuda</li>
+                        <ol>
+                            <li>artefatos</li>
+                            <li>objeto</li>
+                        </ol>
+                    </ol>
+                    <hr>
+                    <dl>
+                        <dt>html</dt>
+                        <dd>linguagem</dd>
+                        <dt>CSS</dt>
+                        <dd>linguagem de estilo</dd>
+                    </dl>
+                    <hr>
+                    <dl>
+                        <dt>www</dt>
+                        <dt>jogo</dt>
+                    </dl>
                 </article>
 
             </section>
+            <table>
+                <caption aria-colspan="4">JINCHUURIKIS</caption>
+                <thead>
+                    <tr>
+                        <th>Biju</th>
+                        <th>Número de Caldas</th>
+                        <th>Habilidades</th>
+                        <th>Último Jinchuuriki</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Todas as Bijus são muito poderosas e temidas, quando não são controladas por seus Jinchuurikis.</td>
+                    </tr>
+
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Shukaku</td>
+                        <td>1 Calda</td>
+                        <td>Magnetismo, Terra, Vento e Kekkei Genkai</td>
+                        <td>Gaara</td>
+                    </tr>
+                    <tr>
+                        <td>Matatabi</td>
+                        <td>2 Caldas</td>
+                        <td>Fogo</td>
+                        <td>Yugito Nii</td>
+                    </tr>
+                    <tr>
+                        <td>Isobu</td>
+                        <td>3 Caldas</td>
+                        <td>Água e Yin</td>
+                        <td>Yagura</td>
+                    </tr>
+                    <tr>
+                        <td>Son Goku</td>
+                        <td>4 Caldas</td>
+                        <td>Fusão, Fogo, Terra e Kekkei Genkai</td>
+                        <td> Roshi</td>
+                    </tr>
+                    <tr>
+                        <td>Kokuo</td>
+                        <td>5 Caldas</td>
+                        <td>Ebulição, Água, Fogo e Kekkei Genkai</td>
+                        <td>Han</td>
+                    </tr>
+                    <tr>
+                        <td>Saiken</td>
+                        <td>6 Caldas</td>
+                        <td>Dissolução, Água e Kekkei Genkai</td>
+                        <td>Utakata</td>
+                    </tr>
+                    <tr>
+                        <td>Chomei</td>
+                        <td>7 Caldas</td>
+                        <td>Hiden</td>
+                        <td>Fu</td>
+                    </tr>
+                    <tr>
+                        <td>Gyuki</td>
+                        <td>8 Caldas</td>
+                        <td>Ninjutsu e Criação de Tinta</td>
+                        <td>Killer Be</td>
+                    </tr>
+                    <tr>
+                        <td>Kurama</td>
+                        <td>9 Caldas</td>
+                        <td>Fogo, Vento e Yang</td>
+                        <td>Naruto</td>
+                    </tr>
+                    <tr>
+                        <td>Jubi</td>
+                        <td>10 Caldas</td>
+                        <td>Sharingan, Madeira, Água, Fogo, Vento, Raio, Terra, Yin, Yang, Kekkei Genkai e Kekkei Mora</td>
+                        <td>Madara Uchira</td>
+                    </tr>
+                </tbody>
+            </table>
         </main>
         <footer class="rodape">
             <p>Copyright &copy; 2018</p>
         </footer>
     </div>
-    
+
 </body>
+
 </html>
